@@ -1,5 +1,8 @@
-import React from "react";
+import { useEffect } from "react";
 
-export const useTitle = () => {
-  return <div>useTitle</div>;
+export const useTitle = (title) => {
+  useEffect(() => {
+    document.title = `${title} | ShopMate`;
+  }, [title]);
+  return null;
 };

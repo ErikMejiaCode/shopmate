@@ -1,3 +1,10 @@
+Demo Site - 
+https://react-shopmate-demo.netlify.app/
+
+Screenshot:
+![Screenshot 2023-08-27 at 4 39 50 PM](https://github.com/ErikMejiaCode/shopmate/assets/112577065/b55c1ce7-3bb4-44f1-b157-68397b932b4b)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -20,6 +20,8 @@ export const CartProvider = ({ children }) => {
         products: updatedCartList,
       },
     });
+
+    updateTotal(updatedCartList);
   };
 
   const removeFromCart = (product) => {
@@ -31,6 +33,20 @@ export const CartProvider = ({ children }) => {
       type: "REMOVE_FROM_CART",
       payload: {
         products: updatedCartList,
+      },
+    });
+
+    updateTotal(updatedCartList);
+  };
+
+  const updateTotal = (products) => {
+    let total = 0;
+    products.forEach((product) => (total = total + product.price));
+
+    dispatch({
+      type: "UPDATE_TOTAL",
+      payload: {
+        total: total,
       },
     });
   };
